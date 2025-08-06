@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chore Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Chore Tracker</h1>
+    <div id="user-select">
+      <p>Select your name:</p>
+      <button onclick="setUser('Ollie')">Ollie</button>
+      <button onclick="setUser('Charlie')">Charlie</button>
+    </div>
+
+    <div id="main" style="display: none;">
+      <h2 id="welcome"></h2>
+      <form id="chore-form"></form>
+
+      <p><strong>Reward:</strong> <span id="reward">0</span> minutes</p>
+
+      <label for="platform">Choose platform:</label>
+      <select id="platform">
+        <option>PC</option>
+        <option>Xbox</option>
+        <option>Phone</option>
+      </select>
+
+      <button onclick="resetDay()">Reset for New Day</button>
+      <button onclick="logout()">Switch User</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
